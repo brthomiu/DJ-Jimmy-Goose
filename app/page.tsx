@@ -6,7 +6,7 @@ import Intro from "./components/intro/Intro";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth">
+    <main className="grid grid-flow-rows gap-24 scroll-smooth overflow-x-hidden">
       <Nav />
       <Intro />
       <Spacer />

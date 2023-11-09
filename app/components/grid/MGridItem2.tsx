@@ -1,14 +1,14 @@
 "use client";
 
-import dj3 from "../../assets/dj3.jpeg";
-import party2 from "../../assets/party2.jpeg";
+import dj1 from "../../assets/dj1.png";
+import party3 from "../../assets/party3.jpeg";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 type Props = {};
 
-export default function GridItem2({}: Props) {
+export default function MGridItem2({}: Props) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,8 +21,8 @@ export default function GridItem2({}: Props) {
   );
   const opacity1 = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.8, 1],
-    [0, 1, 1, 0.5],
+    [0, 0.5, 0.7, 1],
+    [1, 1, 0.5, 0],
   );
   const opacity2 = useTransform(
     scrollYProgress,
@@ -31,53 +31,46 @@ export default function GridItem2({}: Props) {
   );
   const width1 = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.8, 1],
-    ["60%", "75%", "75%", "60%"],
+    [0, 0.5, 0.8, 1],
+    ["85%", "60%", "40%", "15%"],
   );
   const width2 = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.7, 1],
-    ["40%", "25%", "25%", "40%"],
+    [0, 0.5, 0.8, 1],
+    ["15%", "40%", "60%", "85%"],
   );
 
   return (
     <motion.div
       className="
-        group
-        flex h-full 
-        w-3/4 
-        max-w-5xl flex-row 
+        group -mt-24
+        flex h-[500px]
+        max-w-5xl flex-col 
         justify-center
         "
       tabIndex={0}
     >
       <motion.div
         ref={ref}
-        style={{
-          scale: scale,
-          opacity: opacity1,
-        }}
+        initial={{opacity: .5}}
+
         className="
           absolute
           z-50 mt-72
           w-3/4 max-w-5xl 
           bg-black bg-opacity-60
+          text-white
           text-center 
           opacity-0 
           max-xl:mt-52
           "
       >
-        <motion.h1 className="text-4xl italic blur-none cursor-default">
-          &quot;Jimmy saved our wedding with the power of music.&quot;
-        </motion.h1>
-        <motion.h1 className="mt-2 text-2xl italic blur-none cursor-default">
-          - Garfield Nixon Brauer
-        </motion.h1>
+
       </motion.div>
       <motion.div
         style={{
-          scale: scale,
-          opacity: opacity2,
+        //   scale: scale,
+        //   opacity: opacity2,
         }}
         className="
           flex h-full 
@@ -93,7 +86,7 @@ export default function GridItem2({}: Props) {
         >
           <Image
             className="h-full max-h-96 object-cover"
-            src={party2}
+            src={party3}
             alt="Wedding party"
           />
         </motion.div>
@@ -104,11 +97,26 @@ export default function GridItem2({}: Props) {
         >
           <Image
             className="h-full max-h-96 object-cover"
-            src={dj3}
+            src={dj1}
             alt="Wedding DJ"
           />
+          
+
+
         </motion.div>
+      
+      
+      
       </motion.div>
+
+      <motion.div className="relative text-center w-full bg-black">
+          <motion.h1 style={{opacity: opacity1}} className="mt-12 text-xl italic blur-none cursor-default">
+          &quot;The reception was a blast thanks to Jimmy.&quot;
+        </motion.h1>
+        <motion.h1 style={{opacity: opacity1}} className="mt-2 mb-12 text-lg italic blur-none cursor-default">
+        - Michelle H.
+        </motion.h1>
+        </motion.div>
     </motion.div>
   );
 }

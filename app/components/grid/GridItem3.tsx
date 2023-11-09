@@ -15,27 +15,27 @@ export default function GridItem3({}: Props) {
 
   const scale = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     [1, 1.25, 1.25, 1],
   );
   const opacity1 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.8, 1],
+    [0, 0.4, 0.8, 1],
     [0, 1, 1, 0.5],
   );
   const opacity2 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     [0, 1, 1, 0.5],
   );
   const width1 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     ["60%", "75%", "75%", "60%"],
   );
   const width2 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.7, 1],
     ["40%", "25%", "25%", "40%"],
   );
 
@@ -58,17 +58,17 @@ export default function GridItem3({}: Props) {
         className="
           absolute
           z-50 mt-72
-        w-3/4 max-w-5xl 
+          w-3/4 max-w-5xl 
           bg-black bg-opacity-60
           text-center 
           opacity-0 
           max-xl:mt-52
           "
       >
-        <h1 className="text-4xl italic blur-none">
+        <h1 className="text-4xl italic blur-none cursor-default">
           &quot;The soundtrack to our wedding was PERFECT!&quot;
         </h1>
-        <h1 className="mt-2 text-2xl italic blur-none">- Riley S.</h1>
+        <h1 className="mt-2 text-2xl italic blur-none cursor-default">- Riley S.</h1>
       </motion.div>
       <motion.div
         style={{ scale: scale, opacity: opacity2 }}

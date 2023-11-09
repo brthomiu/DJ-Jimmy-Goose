@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 type Props = {};
 
-export default function GridHeader({}: Props) {
+export default function ContactHeader({}: Props) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -19,7 +19,7 @@ export default function GridHeader({}: Props) {
   return (
     <motion.div style={{ scale: scale, opacity: opacity }}>
       <h1 ref={ref} className="text-center text-5xl font-bold text-slate-200 cursor-default">
-        Testimonials
+        Contact
       </h1>
     </motion.div>
   );

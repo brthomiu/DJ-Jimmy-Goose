@@ -16,27 +16,27 @@ export default function GridItem2({}: Props) {
 
   const scale = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     [1, 1.25, 1.25, 1],
   );
   const opacity1 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.8, 1],
+    [0, 0.4, 0.8, 1],
     [0, 1, 1, 0.5],
   );
   const opacity2 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     [0, 1, 1, 0.5],
   );
   const width1 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.8, 1],
     ["60%", "75%", "75%", "60%"],
   );
   const width2 = useTransform(
     scrollYProgress,
-    [0, 0.5, 0.7, 1],
+    [0, 0.4, 0.7, 1],
     ["40%", "25%", "25%", "40%"],
   );
 
@@ -67,10 +67,10 @@ export default function GridItem2({}: Props) {
           max-xl:mt-52
           "
       >
-        <motion.h1 className="text-4xl italic blur-none">
+        <motion.h1 className="text-4xl italic blur-none cursor-default">
           &quot;The reception was a blast thanks to Jimmy.&quot;
         </motion.h1>
-        <motion.h1 className="mt-2 text-2xl italic blur-none">
+        <motion.h1 className="mt-2 text-2xl italic blur-none cursor-default">
           - Michelle H.
         </motion.h1>
       </motion.div>

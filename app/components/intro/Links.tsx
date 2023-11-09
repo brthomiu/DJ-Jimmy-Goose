@@ -9,8 +9,8 @@ type Props = {};
 
 export default function Links({}: Props) {
   return (
-    <div className="flex flex-row gap-16 p-4">
-      <Link href="https://www.instagram.com">
+    <div className="flex select-none flex-row gap-16 p-4">
+      <Link href="https://www.instagram.com" target="_blank">
         <Image
           className="
             w-12 
@@ -21,7 +21,7 @@ export default function Links({}: Props) {
           alt="instagram"
         />
       </Link>
-      <Link href="https://www.facebook.com">
+      <Link href="https://www.facebook.com" target="_blank">
         <Image
           className="
           w-12 
@@ -32,7 +32,7 @@ export default function Links({}: Props) {
           alt="facebook"
         />
       </Link>
-      <Link href="https://www.twitter.com">
+      <Link href="https://www.twitter.com" target="_blank">
         <Image
           className="
           w-12 
@@ -43,7 +43,7 @@ export default function Links({}: Props) {
           alt="twitter"
         />
       </Link>
-      <Link href="https://www.tiktok.com">
+      <Link href="https://www.tiktok.com" target="_blank">
         <Image
           className="
           w-12 

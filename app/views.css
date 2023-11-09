@@ -1,0 +1,17 @@
+@media screen and (max-width: 1279px){
+.DesktopView {
+    display: none;
+}
+
+}
+
+
+.MobileView {
+    display: none;
+}
+
+@media screen and (max-width: 1279px){
+    .MobileView {
+        display: block;
+    }
+}

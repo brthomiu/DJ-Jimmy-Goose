@@ -10,7 +10,7 @@ type Props = {};
 
 export default function Intro({}: Props) {
   return (
-    <div className="z-30 mt-4">
+    <section id="top" className="z-30 mt-4">
       <div
         className="
           z-30 flex flex-col
@@ -41,6 +41,6 @@ export default function Intro({}: Props) {
         alt="Wedding venue"
         src={background}
       />
-      </div>
+      </section>
   );
 }

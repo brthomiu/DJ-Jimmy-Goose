@@ -7,7 +7,7 @@ type Props = {};
 
 export default function ItemGrid({}: Props) {
   return (
-    <div className="flex flex-col justify-center ">
+    <section id="testimonials" className="flex flex-col justify-center ">
       <GridHeader />
       <div
         className="
@@ -23,6 +23,6 @@ export default function ItemGrid({}: Props) {
         <GridItem3 />
         <GridItem1 />
       </div>
-    </div>
+    </section>
   );
 }

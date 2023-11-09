@@ -7,7 +7,7 @@ export default function Awards({}: Props) {
   return (
     <div className="flex flex-col gap-4 items-start">
       <div className="flex flex-row items-center">
-      <Image className="w-12 mr-2 mb-1 h-fit" src={badge} alt="Award icon" />
+      <Image className="w-12 mr-2 mb-1 h-fit select-none" src={badge} alt="Award icon" />
         <div className="flex flex-col">
           <h1 className="font-bold text-xl z-20 text-slate-700 italic">
             Gold Medal - Formal/Wedding
@@ -18,7 +18,7 @@ export default function Awards({}: Props) {
         </div>
       </div>
       <div className="flex flex-row items-center">
-      <Image className="w-12 mr-2 mb-1 h-fit" src={badge} alt="Award icon" />
+      <Image className="w-12 mr-2 mb-1 h-fit select-none" src={badge} alt="Award icon" />
         <div className="flex flex-col">
           <h1 className="font-bold text-xl z-20 text-slate-700 italic">
             Rising Star DJ Award - 2019

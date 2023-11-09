@@ -1,6 +1,5 @@
 import React from "react";
 import Awards from "./Awards";
-import ContactButton from "./ContactButton";
 type Props = {};
 
 export default function Info({}: Props) {
@@ -23,16 +22,18 @@ export default function Info({}: Props) {
         duration-1000
         focus:w-[460px] focus:cursor-default
         2xl:mt-40
+        3xl:mt-72
+        4xl:mt-96
         "
       tabIndex={0}
     >
       <div
         className="
-          absolute
-          top-28 z-50 flex
+          top-22
+          absolute z-50 flex
           w-[360px]
           -translate-x-48 cursor-default flex-col
-          gap-12
+          gap-8
           justify-self-start
           text-slate-700
           opacity-0
@@ -42,12 +43,13 @@ export default function Info({}: Props) {
           group-focus:opacity-100
           "
       >
-        <p>
-          Sed vel gravida nibh. Nunc sit amet ultrices urna. Sed varius leo
-          neque, quis rhoncus libero pharetra a. Ut nunc erat, blandit sed
-          rhoncus sit amet, blandit quis sem. Nullam ligula orci, commodo id
-          metus vel, fringilla auctor urna. Sed vitae sem dapibus, maximus nisi
-          id, lobortis felis.
+        <h2 className="text-xl font-bold">Meet DJ Jimmy Goose</h2>
+        <p className="break-normal text-justify">
+          The premier choice for unforgettable weddings and events. With an
+          award-winning flair for creating magical musical landscapes, DJ Jimmy
+          Goose turns your wedding into an enchanting symphony of love and joy.
+          Dance the night away to his tunes and experience the wedding of your
+          dreams.
         </p>
         <Awards />
         <div></div>
@@ -57,9 +59,11 @@ export default function Info({}: Props) {
           absolute
           z-50 
           scale-y-[600%]
+          select-none
           text-slate-700
-          transition-all
-          duration-1000 group-focus:translate-x-[215px]"
+          transition-all duration-1000
+          group-focus:translate-x-[215px]
+          "
       >
         {"||"}
       </h1>

@@ -5,12 +5,12 @@ type Props = {};
 export default function ContactButton({}: Props) {
   return (
     <Link
-      href="/#booking"
+      href="/#contact"
       className="
         z-40
         mr-2
         flex h-16
-        w-64 flex-col justify-center
+        w-48 flex-col justify-center
         rounded-xl 
         bg-green-400
         bg-opacity-90
@@ -19,11 +19,11 @@ export default function ContactButton({}: Props) {
         font-bold
         text-slate-700
         transition-all duration-200
-        active:scale-90
         hover:scale-105
+        active:scale-90
         "
     >
-      Booking Information
+      Contact
     </Link>
   );
 }

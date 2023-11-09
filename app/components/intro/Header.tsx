@@ -18,7 +18,7 @@ export default function Header({}: Props) {
         text-opacity-60
         "
     >
-      <h1 className="top-[24px] z-40 text-5xl font-bold text-slate-900 cursor-default sm:text-xl">
+      <h1 className="top-[24px] z-40 text-5xl ml-2 font-bold text-slate-900 cursor-default sm:text-xl">
         Jimmy Goose • Wedding DJ
       </h1>
     <ContactButton />
